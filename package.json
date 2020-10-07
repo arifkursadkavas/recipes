@@ -4,6 +4,10 @@
   "description": "A web-app to list recipes and details of each recipe that are available at Marley-Spoon",
   "main": "index.js",
   "scripts": {
+    "dev": "next -p 4200",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
     "test": "jest"
   },
   "repository": {
@@ -20,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/hashgesh/recipes/issues"
   },
-  "homepage": "https://github.com/hashgesh/recipes#readme"
+  "homepage": "https://github.com/hashgesh/recipes#readme",
+  "dependencies": {
+    "next": "^9.5.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
