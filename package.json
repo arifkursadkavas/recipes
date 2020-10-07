@@ -1,0 +1,24 @@
+{
+  "name": "recipes",
+  "version": "1.0.0",
+  "description": "A web-app to list recipes and details of each recipe that are available at Marley-Spoon",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashgesh/recipes.git"
+  },
+  "keywords": [
+    "Nextjs",
+    "SSR",
+    "Scss"
+  ],
+  "author": "Arif Kursad KAVAS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hashgesh/recipes/issues"
+  },
+  "homepage": "https://github.com/hashgesh/recipes#readme"
+}
