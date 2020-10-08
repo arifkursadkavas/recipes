@@ -1,24 +1,12 @@
 import { Component } from 'react';
-import Card from '../components/Card';
+import Router from 'next/router';
 
 class Home extends Component {
+  componentDidMount() {
+    Router.push('/recipeList');
+  }
   render() {
-    return (
-      <div className='cardRow'>
-        <div className='cardColumn'>
-          <Card title='Royal Blue' imageId='1'></Card>
-        </div>
-        <div className='cardColumn'>
-          <Card title='Royal Blue' imageId='1'></Card>
-        </div>
-        <div className='cardColumn'>
-          <Card title='Royal Blue' imageId='1'></Card>
-        </div>
-        <div className='cardColumn'>
-          <Card title='Royal Blue' imageId='1'></Card>
-        </div>
-      </div>
-    );
+    return null;
   }
 }
 
