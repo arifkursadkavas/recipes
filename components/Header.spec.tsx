@@ -6,7 +6,7 @@ describe('Components', () => {
   describe('Header', () => {
     it('should render without throwing an error', function () {
       const wrap = mount(<Header />);
-      expect(wrap.find('div').text()).toBe('Welcome to Marley Spoon recipes!');
+      expect(wrap.find('span').text()).toBe('Marley Spoon');
     });
   });
 });
