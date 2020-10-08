@@ -9,7 +9,14 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <link
+            rel='icon'
+            type='image/png'
+            sizes='96x96'
+            href='./favicon-96x96.png'
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />

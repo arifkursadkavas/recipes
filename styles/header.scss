@@ -2,3 +2,16 @@
   background: #2c3859;
   height: 3em;
 }
+
+.headerLogo {
+  height: 90%;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.headerTitle {
+  color: white;
+  position: fixed;
+  margin-top: 1em;
+  font-family: 'Avenir Next Cyr W00 Regular', Arial, sans-serif;
+}

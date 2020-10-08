@@ -1,0 +1,8 @@
+@mixin m-font-family {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Ubuntu, 'Helvetica Neue', sans-serif; //'Inconsolata', sans-serif;
+}
+
+@mixin card-background-color {
+  background-color: white; //#dce3f8;
+}

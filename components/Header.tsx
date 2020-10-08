@@ -5,7 +5,8 @@ class Header extends Component {
   render() {
     return (
       <div className='header'>
-        <h1>Welcome to Marley Spoon recipes!</h1>
+        <img className='headerLogo' src='favicon-96x96.png'></img>
+        <span className='headerTitle'>Marley Spoon</span>
       </div>
     );
   }
