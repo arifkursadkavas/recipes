@@ -23,6 +23,7 @@ Production
 You can export the app with static resources
 
 ```bash
+npm run build
 npm run export
 ```
 
