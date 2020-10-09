@@ -3,6 +3,8 @@ import App from 'next/app';
 import '../styles/index.scss';
 import Header from '../components/Header';
 import Layout from '../components/Layout';
+import { ApolloProvider } from '@apollo/client';
+import apolloClient from '../graphql/client';
 
 class MyApp extends App<any> {
   render() {
@@ -11,7 +13,9 @@ class MyApp extends App<any> {
       <Fragment>
         <Header />
         <Layout>
-          <Component {...pageProps} />
+          <ApolloProvider client={apolloClient}>
+            <Component {...pageProps} />
+          </ApolloProvider>
         </Layout>
       </Fragment>
     );

@@ -1,10 +1,10 @@
 import * as React from 'react';
 
 const Card = (props) => {
-  const { title, imageId } = props;
+  const { title, imageUrl } = props;
   return (
     <div className='cardContainer'>
-      <img className='cardImage' src='picture.png'></img>
+      <img className='cardImage' src={imageUrl}></img>
       <div className='cardTitle'>{title}</div>
     </div>
   );
