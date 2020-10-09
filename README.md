@@ -13,6 +13,12 @@ npm install
 ## Running
 
 Development
+
+```diff
+-Before running, enter the SPACE_ID and ACCESS_TOKEN fields inside the file ./config/auth.ts
+-in order to access the relevant Contentful Space
+```
+
 Run below command from the root of the application. Application is served from port 4200
 
 ```bash

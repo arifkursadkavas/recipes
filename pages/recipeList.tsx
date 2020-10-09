@@ -13,7 +13,12 @@ const RecipeList = () => {
   }
   if (error) {
     console.error(error);
-    return <div>Error!</div>;
+    return (
+      <div>
+        Error!(Could be possible that you did not enter the SPACE_ID and the
+        ACCESS_TOKEN inside ./config/auth.ts)
+      </div>
+    );
   }
 
   return (
