@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import Router from 'next/router';
-import { Head } from 'next/document';
+import Head from 'next/head';
 
 class Home extends Component {
   componentDidMount() {

@@ -5,7 +5,11 @@ const Header = () => {
   return (
     <div className='header'>
       <Link href='/'>
-        <img className='headerLogo' src='favicon-96x96.png'></img>
+        <img
+          className='headerLogo'
+          src='../favicon-96x96.png'
+          alt='Header Logo'
+        ></img>
       </Link>
       <Link href='/'>
         <span className='headerTitle'>Marley Spoon</span>

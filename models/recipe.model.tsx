@@ -1,13 +1,17 @@
-export interface IRecipe {
-  id: number;
-  title: string;
-  photo: Photo;
-  tagList: string[];
-  description: string;
-  chefName: string;
+export interface ISingleRecipe {
+  recipe: IRecipe;
 }
 
-interface Photo {
+export interface IRecipe {
+  id: { id: number };
+  title: string;
+  photo: IPhoto;
+  tagList: string[];
+  description: string;
+  chef: { name: string };
+}
+
+interface IPhoto {
   url: string;
 }
 
