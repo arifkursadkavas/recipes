@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { useQuery } from '@apollo/client';
 import Head from 'next/head';
 import Router from 'next/router';
@@ -6,7 +7,7 @@ import Card from '../components/Card';
 import { GET_RECIPES } from '../graphql/queries';
 import { IRecipeList } from '../models/recipe.model';
 
-const RecipeList = () => {
+const RecipeList: React.FC<RecipeListProps> = () => {
   const { loading, error, data } = useQuery<IRecipeList>(GET_RECIPES, {
     variables: {},
   });
@@ -15,7 +16,7 @@ const RecipeList = () => {
     return <div>Loading...</div>;
   }
   if (error) {
-    console.error(error);
+    //console.error(error);
     return (
       <div>
         Error!(Could be possible that you did not enter the SPACE_ID and the
@@ -27,20 +28,20 @@ const RecipeList = () => {
   return (
     <Fragment>
       <Head>
-        <title>'Marley Spoon recipes' </title>
-        <meta property='og:title' content='Marley Spoon recipes' />
-        <meta property='og:description' content='Marley Spoon recipes' />
-        <meta property='og:type' content='website' />
-        <meta property='og:image' content='../favicon-96x96.png' />
-        <meta property='og:image:url' content='../favicon-96x96.png' />
-        <meta property='og:image:secure_url' content='' />
-        <meta property='og:image:width' content='200' />
-        <meta property='og:image:height' content='200' />
+        <title>Marley Spoon recipes</title>
+        <meta property="og:title" content="Marley Spoon recipes" />
+        <meta property="og:description" content="Marley Spoon recipes" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="../favicon-96x96.png" />
+        <meta property="og:image:url" content="../favicon-96x96.png" />
+        <meta property="og:image:secure_url" content="" />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
       </Head>
-      <div className='cardRow'>
+      <div className="cardRow">
         {data &&
           data.recipeCollection.items.map((recipe) => (
-            <div className='cardColumn' key={recipe.title}>
+            <div className="cardColumn" key={recipe.title}>
               <Card
                 title={recipe.title}
                 imageUrl={recipe.photo.url}
@@ -56,5 +57,7 @@ const RecipeList = () => {
 const handleCardClick = (recipeId) => {
   Router.push(`/recipes/${encodeURIComponent(recipeId)}`);
 };
+
+interface RecipeListProps {}
 
 export default RecipeList;

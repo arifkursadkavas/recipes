@@ -1,5 +1,4 @@
 import { gql } from '@apollo/client';
-import apolloClient from './client';
 
 export const GET_RECIPE = gql`
   query($id: String!) {

@@ -5,9 +5,8 @@ import { ISingleRecipe } from '../../models/recipe.model';
 import { GET_RECIPE } from '../../graphql/queries';
 import RecipeDetails from '../../components/RecipeDetail';
 import Head from 'next/head';
-import Link from 'next/link';
 
-const Recipe = ({}) => {
+const Recipe: React.FC<RecipeProps> = () => {
   const router = useRouter();
   const { id } = router.query;
 
@@ -24,7 +23,7 @@ const Recipe = ({}) => {
   }
 
   if (error) {
-    console.error(error);
+    //console.error(error);
     return (
       <div>
         Error!(Could be possible that you did not enter the SPACE_ID and the
@@ -37,14 +36,14 @@ const Recipe = ({}) => {
     <div>
       <Head>
         <title>{data.recipe?.title}</title>
-        <meta property='og:title' content={data.recipe?.title} />
-        <meta property='og:description' content={data.recipe?.description} />
-        <meta property='og:type' content='website' />
-        <meta property='og:image' content='../favicon-96x96.png' />
-        <meta property='og:image:url' content='../favicon-96x96.png' />
-        <meta property='og:image:secure_url' content='' />
-        <meta property='og:image:width' content='200' />
-        <meta property='og:image:height' content='200' />
+        <meta property="og:title" content={data.recipe?.title} />
+        <meta property="og:description" content={data.recipe?.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="../favicon-96x96.png" />
+        <meta property="og:image:url" content="../favicon-96x96.png" />
+        <meta property="og:image:secure_url" content="" />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
       </Head>
       {/* <Link href='/recipeList'>
         <button className='backButton'>Back to List</button>
@@ -60,5 +59,7 @@ const Recipe = ({}) => {
     </div>
   );
 };
+
+interface RecipeProps {}
 
 export default Recipe;

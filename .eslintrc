@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-console": 2,
+    "react/prop-types": 0,
+    "react/destructuring-assignment": 0,
+    "react/static-property-placement": 0,
+    "jsx-ally/alt-text": 0,
+    "react/jsx-props-no-spreading": 0,
+    "@typescript-eslint/no-empty-interface": "off"
+  }
+}

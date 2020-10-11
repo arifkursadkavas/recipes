@@ -21,9 +21,12 @@ exports[`Components RecipeDetail snapshot renders 1`] = `
     </div>
     <div
       className="recipeDescription"
-    >
-      Description
-    </div>
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Description",
+        }
+      }
+    />
     <div
       className="recipeChef"
     >

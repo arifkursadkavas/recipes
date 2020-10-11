@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { Fragment } from 'react';
 import App from 'next/app';
 import '../styles/index.scss';
@@ -6,7 +7,7 @@ import Layout from '../components/Layout';
 import { ApolloProvider } from '@apollo/client';
 import apolloClient from '../graphql/client';
 
-class MyApp extends App<any> {
+class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (

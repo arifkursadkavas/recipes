@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Tag from './Tag';
 
-const RecipeDetails = (props) => {
+const RecipeDetail: React.FC<RecipeDetailProps> = (props) => {
   const { title, imageUrl, chef, description, tags } = props;
 
   const formattedDesc = replaceRegex(description);
@@ -39,7 +39,7 @@ const replaceRegex = (str) => {
   const starRegex = new RegExp(/\*(.*?)\*/, 'ig');
   str = str.replace(starRegex, '<span class="starClass">$1</span>');
 
-  const usRegex = new RegExp(/\_{2}(.*?)\_{2}/, 'ig');
+  const usRegex = new RegExp(/_{2}(.*?)_{2}/, 'ig');
 
   str = str.replace(usRegex, '<span class="ucClass">$1</span>');
 
@@ -50,4 +50,12 @@ const replaceRegex = (str) => {
   return str;
 };
 
-export default RecipeDetails;
+interface RecipeDetailProps {
+  title: string;
+  imageUrl: string;
+  chef: string;
+  description: string;
+  tags: Array<{ name: string }>;
+}
+
+export default RecipeDetail;

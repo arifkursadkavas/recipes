@@ -3,6 +3,7 @@
 exports[`Components Card snapshot renders 1`] = `
 <div
   className="cardContainer"
+  onClick={[Function]}
 >
   <img
     alt="Test title"

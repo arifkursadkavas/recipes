@@ -8,14 +8,14 @@ describe('Components', () => {
     test('snapshot renders', () => {
       const component = renderer.create(
         <RecipeDetail
-          title='Title'
-          imageUrl='ImageUrl'
-          chef='ChefName'
-          description='Description'
+          title="Title"
+          imageUrl="ImageUrl"
+          chef="ChefName"
+          description="Description"
           tags={[{ name: 'tag1' }, { name: 'tag2' }]}
         />
       );
-      let tree = component.toJSON();
+      const tree = component.toJSON();
       expect(tree).toMatchSnapshot();
     });
   });
@@ -26,10 +26,10 @@ describe('Components', () => {
     it('should render title without throwing an error', function () {
       const wrap = mount(
         <RecipeDetail
-          title='Title'
-          imageUrl='ImageUrl'
-          chef='ChefName'
-          description='Description'
+          title="Title"
+          imageUrl="ImageUrl"
+          chef="ChefName"
+          description="Description"
           tags={[{ name: 'tag1' }, { name: 'tag2' }]}
         />
       );
@@ -43,10 +43,10 @@ describe('Components', () => {
     it('should render description without throwing an error', function () {
       const wrap = mount(
         <RecipeDetail
-          title='Title'
-          imageUrl='ImageUrl'
-          chef='ChefName'
-          description='Description'
+          title="Title"
+          imageUrl="ImageUrl"
+          chef="ChefName"
+          description="Description"
           tags={[{ name: 'tag1' }, { name: 'tag2' }]}
         />
       );
@@ -60,10 +60,10 @@ describe('Components', () => {
     it('should render imageUrl without throwing an error', function () {
       const wrap = mount(
         <RecipeDetail
-          title='Title'
-          imageUrl='ImageUrl'
-          chef='ChefName'
-          description='Description'
+          title="Title"
+          imageUrl="ImageUrl"
+          chef="ChefName"
+          description="Description"
           tags={[{ name: 'tag1' }, { name: 'tag2' }]}
         />
       );
@@ -77,10 +77,10 @@ describe('Components', () => {
     it('should render chef name without throwing an error', function () {
       const wrap = mount(
         <RecipeDetail
-          title='Title'
-          imageUrl='ImageUrl'
-          chef='ChefName'
-          description='Description'
+          title="Title"
+          imageUrl="ImageUrl"
+          chef="ChefName"
+          description="Description"
           tags={[{ name: 'tag1' }, { name: 'tag2' }]}
         />
       );
@@ -94,10 +94,10 @@ describe('Components', () => {
     it("should render chef name as 'Anonymous' when it is not supplied", function () {
       const wrap = mount(
         <RecipeDetail
-          title='Title'
-          imageUrl='ImageUrl'
-          chef=''
-          description='Description'
+          title="Title"
+          imageUrl="ImageUrl"
+          chef=""
+          description="Description"
           tags={[{ name: 'tag1' }, { name: 'tag2' }]}
         />
       );
@@ -111,10 +111,10 @@ describe('Components', () => {
     it('should render Tag components without throwing an error', function () {
       const wrap = shallow(
         <RecipeDetail
-          title='Title'
-          imageUrl='ImageUrl'
-          chef='ChefName'
-          description='Description'
+          title="Title"
+          imageUrl="ImageUrl"
+          chef="ChefName"
+          description="Description"
           tags={[{ name: 'tag1' }, { name: 'tag2' }]}
         />
       );
@@ -128,10 +128,10 @@ describe('Components', () => {
     it("should render Tag component with 'text' property without throwing an error", function () {
       const wrap = shallow(
         <RecipeDetail
-          title='Title'
-          imageUrl='ImageUrl'
-          chef='ChefName'
-          description='Description'
+          title="Title"
+          imageUrl="ImageUrl"
+          chef="ChefName"
+          description="Description"
           tags={[{ name: 'tag1' }]}
         />
       );
@@ -145,10 +145,10 @@ describe('Components', () => {
     it("should render Tag component with 'text' property value without throwing an error", function () {
       const wrap = shallow(
         <RecipeDetail
-          title='Title'
-          imageUrl='ImageUrl'
-          chef='ChefName'
-          description='Description'
+          title="Title"
+          imageUrl="ImageUrl"
+          chef="ChefName"
+          description="Description"
           tags={[{ name: 'tag1' }]}
         />
       );

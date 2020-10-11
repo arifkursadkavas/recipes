@@ -7,7 +7,7 @@ describe('Components', () => {
   describe('Header', () => {
     test('snapshot renders', () => {
       const component = renderer.create(<Header />);
-      let tree = component.toJSON();
+      const tree = component.toJSON();
       expect(tree).toMatchSnapshot();
     });
   });
