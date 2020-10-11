@@ -27,6 +27,7 @@ const RecipeList = () => {
   return (
     <Fragment>
       <Head>
+        <title>'Marley Spoon recipes' </title>
         <meta property='og:title' content='Marley Spoon recipes' />
         <meta property='og:description' content='Marley Spoon recipes' />
         <meta property='og:type' content='website' />

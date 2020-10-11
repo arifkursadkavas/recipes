@@ -1,0 +1,16 @@
+.tagList {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  width: inherit;
+
+  & > .tagContainer {
+    margin-right: 0.5em;
+    margin-top: 0.3em;
+    width: fit-content;
+    padding: 0.3em;
+    border-radius: 0.3em;
+    background-color: #c0c2e9;
+    font-size: 0.9em;
+  }
+}

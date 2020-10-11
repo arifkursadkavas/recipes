@@ -6,7 +6,7 @@ export interface IRecipe {
   id: { id: number };
   title: string;
   photo: IPhoto;
-  tagList: string[];
+  tagsCollection: { items: [] };
   description: string;
   chef: { name: string };
 }

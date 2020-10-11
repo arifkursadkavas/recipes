@@ -1,7 +1,31 @@
 .recipeContainer {
   margin: auto;
-  display: flex;
+}
+
+.recipeImage {
+  padding-left: 10em;
+  padding-right: 10em;
+  width: 70%;
+  height: 30%;
+}
+
+.recipeInfo {
+  margin-top: 1em;
+  padding-left: 10em;
+  padding-right: 10em;
+  width: 70%;
+  height: 30%;
 }
 
 .recipeTitle {
+  font-size: 2em;
+  font-style: bold;
+}
+
+.recipeDescription {
+  margin-top: 0.5em;
+}
+
+.recipeChef {
+  margin-top: 1em;
 }

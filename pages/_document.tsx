@@ -16,7 +16,6 @@ class MyDocument extends Document {
             sizes='96x96'
             href='./favicon-96x96.png'
           />
-          <title>Marley Spoon recipes</title>
           <meta charSet='UTF-8' />
           <meta
             property='og:title'

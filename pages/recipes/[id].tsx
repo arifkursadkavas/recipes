@@ -35,6 +35,7 @@ const Recipe = ({}) => {
   return (
     <div>
       <Head>
+        <title>{data.recipe?.title}</title>
         <meta property='og:title' content={data.recipe?.title} />
         <meta property='og:description' content={data.recipe?.description} />
         <meta property='og:type' content='website' />
@@ -49,7 +50,7 @@ const Recipe = ({}) => {
         imageUrl={data.recipe?.photo?.url}
         chef={data.recipe?.chef?.name}
         description={data.recipe?.description}
-        tags={data.recipe?.tagList}
+        tags={data.recipe?.tagsCollection.items}
       ></RecipeDetails>
     </div>
   );

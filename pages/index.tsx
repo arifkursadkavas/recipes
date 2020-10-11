@@ -10,6 +10,7 @@ class Home extends Component {
     return (
       <div>
         <Head>
+          <title>Marley Spoon recipes</title>
           <meta
             name='viewport'
             content='initial-scale=1.0, width=device-width'
