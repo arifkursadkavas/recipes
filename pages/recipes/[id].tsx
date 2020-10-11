@@ -5,6 +5,7 @@ import { ISingleRecipe } from '../../models/recipe.model';
 import { GET_RECIPE } from '../../graphql/queries';
 import RecipeDetails from '../../components/RecipeDetail';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const Recipe = ({}) => {
   const router = useRouter();
@@ -45,6 +46,10 @@ const Recipe = ({}) => {
         <meta property='og:image:width' content='200' />
         <meta property='og:image:height' content='200' />
       </Head>
+      <Link href='/recipeList'>
+        <button className='backButton'>Back to List</button>
+      </Link>
+
       <RecipeDetails
         title={data.recipe?.title}
         imageUrl={data.recipe?.photo?.url}

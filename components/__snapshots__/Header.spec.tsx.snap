@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Header snapshot renders 1`] = `
+<div
+  className="header"
+>
+  <img
+    alt="Header Logo"
+    className="headerLogo"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    src="../favicon-96x96.png"
+  />
+  <span
+    className="headerTitle"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Marley Spoon
+  </span>
+</div>
+`;

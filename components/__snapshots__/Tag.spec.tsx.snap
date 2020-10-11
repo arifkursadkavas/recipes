@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Tag snapshot renders 1`] = `
+<div
+  className="tagContainer"
+>
+  <span
+    className="tagText"
+  >
+    Tag Text
+  </span>
+</div>
+`;

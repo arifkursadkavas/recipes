@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components RecipeDetail snapshot renders 1`] = `
+<div
+  className="recipeContainer"
+>
+  <img
+    alt="Title"
+    className="recipeImage"
+    height="524px"
+    src="ImageUrl"
+    width="787px"
+  />
+  <div
+    className="recipeInfo"
+  >
+    <div
+      className="recipeTitle"
+    >
+      Title
+    </div>
+    <div
+      className="recipeDescription"
+    >
+      Description
+    </div>
+    <div
+      className="recipeChef"
+    >
+      Chef 
+      ChefName
+    </div>
+    <div
+      className="recipeTags"
+    >
+      <div
+        className="tagList"
+      >
+        <div
+          className="tagContainer"
+        >
+          <span
+            className="tagText"
+          >
+            tag1
+          </span>
+        </div>
+        <div
+          className="tagContainer"
+        >
+          <span
+            className="tagText"
+          >
+            tag2
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

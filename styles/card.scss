@@ -17,6 +17,7 @@
 }
 
 .cardTitle {
+  font-weight: bold;
   padding: 10px 16px;
   height: 3em;
   @include m-font-family;
@@ -29,7 +30,7 @@
 
 .cardColumn {
   float: left;
-  width: 44%;
+  width: 46%;
   padding: 0 20px;
 }
 

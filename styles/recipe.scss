@@ -18,7 +18,7 @@
 }
 
 .recipeTitle {
-  font-size: 2em;
+  font-size: 1.5em;
   font-style: bold;
 }
 
@@ -28,4 +28,11 @@
 
 .recipeChef {
   margin-top: 1em;
+}
+
+.backButton {
+  background-color: #6793d7;
+  border: none;
+  height: 3em;
+  border-radius: 2px;
 }
