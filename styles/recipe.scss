@@ -1,11 +1,12 @@
 .recipeContainer {
   margin: auto;
+  margin-left: 10%;
 }
 
 .recipeImage {
   padding-left: 10em;
   padding-right: 10em;
-  width: 70%;
+  width: 60%;
   height: 30%;
 }
 
@@ -13,7 +14,7 @@
   margin-top: 1em;
   padding-left: 10em;
   padding-right: 10em;
-  width: 70%;
+  width: 60%;
   height: 30%;
 }
 
@@ -35,4 +36,27 @@
   border: none;
   height: 3em;
   border-radius: 2px;
+}
+
+.starClass {
+  color: #313194;
+  border: solid 1px #b5d0eb;
+  background-color: #7fd7ff;
+  border-radius: 3px;
+}
+
+.ucClass {
+  color: #313194;
+  border: solid 1px #b5d0eb;
+  background-color: #d9ddf3;
+  border-radius: 3px;
+}
+
+.linkClass {
+  padding: 0.1em;
+  color: #313194;
+  border: solid 1px #b5d0eb;
+  background-color: #d9ddf3;
+  border-radius: 3px;
+  text-decoration: none;
 }
