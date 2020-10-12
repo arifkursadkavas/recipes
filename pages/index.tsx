@@ -3,7 +3,7 @@ import { Component } from 'react';
 import Router from 'next/router';
 import Head from 'next/head';
 
-class Home extends Component {
+class Home extends Component<HomeProps> {
   componentDidMount() {
     Router.push('/recipeList');
   }
@@ -22,4 +22,5 @@ class Home extends Component {
   }
 }
 
+interface HomeProps {}
 export default Home;

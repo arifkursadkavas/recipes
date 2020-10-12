@@ -35,7 +35,7 @@ const RecipeDetail: React.FC<RecipeDetailProps> = (props) => {
 };
 
 //TODO:: Need to know the general patterns here. Below applies to only current data.
-const replaceRegex = (str) => {
+const replaceRegex = (str: string): string => {
   const starRegex = new RegExp(/\*(.*?)\*/, 'ig');
   str = str.replace(starRegex, '<span class="starClass">$1</span>');
 

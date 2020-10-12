@@ -1,3 +1,5 @@
+@import './mixins';
+
 .recipeContainer {
   margin: auto;
   margin-left: 10%;
@@ -21,14 +23,18 @@
 .recipeTitle {
   font-size: 1.5em;
   font-style: bold;
+  @include m-font-family;
 }
 
 .recipeDescription {
   margin-top: 0.5em;
+  text-align: justify;
+  @include m-font-family;
 }
 
 .recipeChef {
   margin-top: 1em;
+  @include m-font-family;
 }
 
 .backButton {
@@ -40,16 +46,15 @@
 
 .starClass {
   color: #313194;
-  border: solid 1px #b5d0eb;
   background-color: #7fd7ff;
   border-radius: 3px;
 }
 
 .ucClass {
   color: #313194;
-  border: solid 1px #b5d0eb;
-  background-color: #d9ddf3;
+  background-color: #bfffc0;
   border-radius: 3px;
+  font-size: 0.9em;
 }
 
 .linkClass {

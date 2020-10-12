@@ -11,7 +11,9 @@ const Card: React.FC<CardProps> = (props) => {
         width="100px"
         height="100px"
       ></img>
-      <div className="cardTitle">{title}</div>
+      <div className="cardTitle">
+        <p>{title}</p>
+      </div>
     </div>
   );
 };

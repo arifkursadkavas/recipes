@@ -1,6 +1,6 @@
 # Marley Spoon Recipe List
 
-A React web app in Typescript, utilizing SSR with Nextjs, Apollo client to consume Contentful API.
+A React web app in Typescript, utilizing SSR with Nextjs, Apollo client to consume Contentful API with GraphQL queries
 
 ## Installation
 
@@ -26,11 +26,32 @@ npm run dev
 ```
 
 Production
+
 You can export the app with static resources
 
 ```bash
 npm run build
 npm run export
+```
+
+to deploy on a hosting server. Static export is found in the 'out' directory.
+
+## Linting
+
+Run
+
+```bash
+npm run lint
+```
+
+to check for the eslint rules denoted in .eslintrc
+
+## Testing
+
+Run tests using the following command
+
+```bash
+npm run test
 ```
 
 ## Contributing
